@@ -2,7 +2,6 @@ package com.newslineapp.util
 
 import com.newslineapp.api.ApiKey
 
-
 class Constants {
 
     companion object{
