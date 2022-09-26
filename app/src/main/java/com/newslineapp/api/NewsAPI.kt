@@ -1,7 +1,6 @@
 package com.newslineapp.api
 
 import com.newslineapp.models.NewsResponse
-import com.newslineapp.util.Constants.Companion.API_KEY
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -15,7 +14,7 @@ interface NewsAPI {
         @Query("page")
         pageNumber: Int = 1,
         @Query("apiKey")
-        apiKey: String = API_KEY
+        apiKey: String = ApiKey.apiKey
     ): Response<NewsResponse>
 
     @GET("v2/everything")
@@ -26,6 +25,6 @@ interface NewsAPI {
         @Query("page")
         pageNumber: Int = 1,
         @Query("apiKey")
-        apiKey: String = API_KEY
+        apiKey: String = ApiKey.apiKey
     ): Response<NewsResponse>
 }

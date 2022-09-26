@@ -1,10 +1,11 @@
 <resources>
-    <string name="app_name">MVVMNewsApp</string>
+    <string name="app_name">NewsLineApp</string>
     <string name="article_saved_successfully">Article saved successfully!</string>
     <string name="article_delete_successfully">Article delete successfully!</string>
     <string name="undo">Undo</string>
     <string name="breaking_news_button_text">Breaking news</string>
     <string name="saved_news_button_text">Saved news</string>
     <string name="search_news_button_text">Search news</string>
+    <string name="an_error_occurred">An error occurred</string>
 
 </resources>

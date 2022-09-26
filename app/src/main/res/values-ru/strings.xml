@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Лента новостей</string>
     <string name="article_saved_successfully">Статья сохранена в избранное</string>
     <string name="article_delete_successfully">Статья успешно удалена</string>
     <string name="undo">Отменить</string>
     <string name="breaking_news_button_text">Горячие новости</string>
     <string name="saved_news_button_text">Избранное</string>
     <string name="search_news_button_text">Поиск новостей</string>
+    <string name="an_error_occurred">Произошла ошибка</string>
+
 </resources>
