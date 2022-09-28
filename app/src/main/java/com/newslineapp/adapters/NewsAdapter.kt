@@ -10,6 +10,11 @@ import com.bumptech.glide.Glide
 import com.newslineapp.R
 import com.newslineapp.models.Article
 import kotlinx.android.synthetic.main.item_article_preview.view.*
+import java.text.SimpleDateFormat
+import java.time.Instant
+import java.time.LocalDate
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder> () {
 
@@ -42,7 +47,10 @@ class NewsAdapter: RecyclerView.Adapter<NewsAdapter.ArticleViewHolder> () {
             tvSource.text = article.source?.name
             tvTitle.text = article.title
             tvDescription.text = article.description
-            tvPublishedAt.text =  article.publishedAt
+            val formatter = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'")
+            val formatterOut = SimpleDateFormat("dd MMM yyyy HH:mm")
+            val date = formatter.parse(article.publishedAt)
+            tvPublishedAt.text = formatterOut.format(date)
             setOnClickListener{
                 onItemClickListener?.let { it(article)}
                 println("onBindViewHolder")

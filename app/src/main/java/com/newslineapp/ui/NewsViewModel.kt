@@ -22,7 +22,7 @@ import java.io.IOException
 
 class NewsViewModel(
     App: Application,
-    val newsRepository: NewsRepository
+    private val newsRepository: NewsRepository
 ): AndroidViewModel(App) {
     val breakingNews : MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
     var breakingNewsPage =  1
@@ -128,7 +128,7 @@ class NewsViewModel(
         val connectivityManager = getApplication<NewsApplication>().getSystemService(
             Context.CONNECTIVITY_SERVICE
         ) as ConnectivityManager
-        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.M){
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
             val activeNetwork = connectivityManager.activeNetwork ?: return false
             val capabilities = connectivityManager.getNetworkCapabilities(activeNetwork) ?: return false
 

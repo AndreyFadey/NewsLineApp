@@ -1,5 +1,6 @@
 package com.newslineapp.ui.fragments
 
+import android.graphics.Color.*
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment

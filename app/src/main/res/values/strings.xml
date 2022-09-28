@@ -7,5 +7,6 @@
     <string name="saved_news_button_text">Saved news</string>
     <string name="search_news_button_text">Search news</string>
     <string name="an_error_occurred">An error occurred</string>
+    <string name="search">Search…</string>
 
 </resources>
